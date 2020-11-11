@@ -4,7 +4,7 @@ public class BattleShip{
     public static Scanner input=new Scanner (System.in);
     public static Random rand = new Random();
 
-    public static String[][] ocean= new String[10][10];//Create the main ocean map using a Single 2D array
+    public static String[][] ocean= new String[10][10];//Create the main ocean map using a 2D array
     public static String[][] ocean2= new String[10][10];//create Ocean2 with computer ships,
 
     public static int userShips=0;
@@ -41,7 +41,7 @@ public class BattleShip{
     }
 
     public static void printMap2(String[][] ocean2){
-        //just for test
+        
         System.out.println("OCEAN2");
         System.out.println("  0123456789  ");
         //Create the numbers on the grid:
@@ -182,7 +182,7 @@ public class BattleShip{
             System.out.println("Hooray! You win the Battle :)");
             System.out.println("\nYour ships: "+userShips+" | Computer ships: "+computerShips+"\n------------------------------------");
         }
-        //printMap2(ocean2);// just for test
+        
     }
 
 }
